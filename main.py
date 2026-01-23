@@ -12,3 +12,7 @@ with open('./data.json') as f:
 @app.get('/')
 def hello_world():
     return 'Hello, World!'
+
+@app.get('/students')
+async def get_students():
+    return data
